@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 import './App.css'
 
 function App() {
@@ -19,15 +20,7 @@ function App() {
 
           <Route path="/projects" element={<Projects />} />
 
-          {/* <Route path="/academics" element={<Academics />} />
-
-          <Route path="/admissions" element={<Admissions />} />
-
-          <Route path="/news-events" element={<News />} />
-
-          <Route path="/gallery" element={<Gallery />} />
-
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
 
         </Routes>
       </BrowserRouter>
