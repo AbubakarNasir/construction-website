@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./projects.css";
 
 /* ---------------------------- Icon components ---------------------------- */
@@ -164,7 +165,7 @@ export default function Projects() {
       {/* ----------------------------- Navbar ----------------------------- */}
       <header className={`bp-nav ${scrolled ? "bp-nav--scrolled" : ""}`}>
         <div className="bp-nav__inner">
-          <a href="/" className="bp-logo">
+          <Link to="/" className="bp-logo">
             <span className="bp-logo__mark" aria-hidden="true">
               <svg viewBox="0 0 40 40" fill="none">
                 <path d="M20 2l17 10v16L20 38 3 28V12L20 2z" fill="#F97316" />
@@ -175,24 +176,23 @@ export default function Projects() {
               BuildPro
               <span className="bp-logo__tagline">Built for a Better Tomorrow</span>
             </span>
-          </a>
+          </Link>
 
           <nav className="bp-nav__links" aria-label="Primary">
-            <a href="/" className="bp-nav__link">Home</a>
-            <a href="/about" className="bp-nav__link">About</a>
-            <a href="/services" className="bp-nav__link">Services</a>
-            <a href="/projects" className="bp-nav__link is-active">Projects</a>
-            <a href="#" className="bp-nav__link">Industries</a>
-            <a href="#" className="bp-nav__link">Contact</a>
+            <Link to="/" className="bp-nav__link">Home</Link>
+            <Link to="/about" className="bp-nav__link">About</Link>
+            <Link to="/services" className="bp-nav__link">Services</Link>
+            <Link to="/projects" className="bp-nav__link is-active">Projects</Link>
+            <Link to="/contact" className="bp-nav__link">Contact</Link>
           </nav>
 
           <div className="bp-nav__actions">
             <button className="bp-icon-btn" aria-label="Search">
               <IconSearch width="18" height="18" />
             </button>
-            <a href="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
+            <Link to="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
               Get a Quote
-            </a>
+            </Link>
             <button className="bp-menu-toggle" aria-label="Open menu" onClick={() => setMenuOpen(true)}>
               <IconMenu width="24" height="24" />
             </button>
@@ -209,16 +209,15 @@ export default function Projects() {
           </button>
         </div>
         <nav className="bp-mobile-menu__links" aria-label="Mobile">
-          <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="/services" onClick={() => setMenuOpen(false)}>Services</a>
-          <a href="/projects" className="is-active" onClick={() => setMenuOpen(false)}>Projects</a>
-          <a href="#" onClick={() => setMenuOpen(false)}>Industries</a>
-          <a href="#" onClick={() => setMenuOpen(false)}>Contact</a>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/projects" className="is-active" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
-        <a href="#quote" className="bp-btn bp-btn--primary bp-mobile-menu__cta" onClick={() => setMenuOpen(false)}>
+        <Link to="/quote" className="bp-btn bp-btn--primary bp-mobile-menu__cta" onClick={() => setMenuOpen(false)}>
           Get a Quote
-        </a>
+        </Link>
       </div>
       <button
         className={`bp-mobile-scrim ${menuOpen ? "is-open" : ""}`}
@@ -234,7 +233,7 @@ export default function Projects() {
         <div className="bp-page-header__inner">
           <h1 className="bp-anim bp-anim--1">Our Projects</h1>
           <nav className="bp-breadcrumb bp-anim bp-anim--2" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <IconChevronRight width="14" height="14" />
             <span>Projects</span>
           </nav>
@@ -288,9 +287,9 @@ export default function Projects() {
             <h2>Interested in Working With Us?</h2>
             <p>Let's bring your vision to life. Get in touch with our team for a free consultation.</p>
           </div>
-          <a href="#quote-form" className="bp-btn bp-btn--primary bp-btn--icon">
+          <Link to="#quote-form" className="bp-btn bp-btn--primary bp-btn--icon">
             Get a Quote <IconArrowRight width="16" height="16" />
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -313,22 +312,22 @@ export default function Projects() {
           <div className="bp-footer__col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="bp-footer__col">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="/services">Building Construction</a></li>
-              <li><a href="/services">Renovation & Remodeling</a></li>
-              <li><a href="/services">Project Management</a></li>
-              <li><a href="/services">Civil Engineering</a></li>
-              <li><a href="/services">Architecture & Design</a></li>
+              <li><Link to="/services/building-construction">Building Construction</Link></li>
+              <li><Link to="/services/renovation-remodeling">Renovation & Remodeling</Link></li>
+              <li><Link to="/services/project-management">Project Management</Link></li>
+              <li><Link to="/services/civil-engineering">Civil Engineering</Link></li>
+              <li><Link to="/services/architecture-design">Architecture & Design</Link></li>
             </ul>
           </div>
 

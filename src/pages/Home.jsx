@@ -267,7 +267,6 @@ export default function Home() {
             <Link to="/about" className="bp-nav__link">About</Link>
             <Link to="/services" className="bp-nav__link">Services</Link>
             <Link to="/projects" className="bp-nav__link">Projects</Link>
-            <Link to="/industries" className="bp-nav__link">Industries</Link>
             <Link to="/contact" className="bp-nav__link">Contact</Link>
           </nav>
 
@@ -298,7 +297,6 @@ export default function Home() {
           <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
           <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-          <Link to="/industries" onClick={() => setMenuOpen(false)}>Industries</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
         <Link to="#quote" className="bp-btn bp-btn--primary bp-mobile-menu__cta" onClick={() => setMenuOpen(false)}>

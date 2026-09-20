@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
+import { Link } from "react-router-dom";
 
 /* ---------------------------- Icon components ---------------------------- */
 
@@ -193,21 +194,20 @@ export default function About() {
           </a>
 
           <nav className="bp-nav__links" aria-label="Primary">
-            <a href="/" className="bp-nav__link">Home</a>
-            <a href="/about" className="bp-nav__link is-active">About</a>
-            <a href="/#services" className="bp-nav__link">Services</a>
-            <a href="/#projects" className="bp-nav__link">Projects</a>
-            <a href="#" className="bp-nav__link">Industries</a>
-            <a href="#" className="bp-nav__link">Contact</a>
+            <Link to="/" className="bp-nav__link">Home</Link>
+            <Link to="/about" className="bp-nav__link is-active">About</Link>
+            <Link to="/services" className="bp-nav__link">Services</Link>
+            <Link to="/projects" className="bp-nav__link">Projects</Link>
+            <Link to="/contact" className="bp-nav__link">Contact</Link>
           </nav>
 
           <div className="bp-nav__actions">
             <button className="bp-icon-btn" aria-label="Search">
               <IconSearch width="18" height="18" />
             </button>
-            <a href="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
+            <Link to="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
               Get a Quote
-            </a>
+            </Link>
             <button className="bp-menu-toggle" aria-label="Open menu" onClick={() => setMenuOpen(true)}>
               <IconMenu width="24" height="24" />
             </button>
@@ -224,16 +224,15 @@ export default function About() {
           </button>
         </div>
         <nav className="bp-mobile-menu__links" aria-label="Mobile">
-          <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="/about" className="is-active" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="/#services" onClick={() => setMenuOpen(false)}>Services</a>
-          <a href="/#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-          <a href="#" onClick={() => setMenuOpen(false)}>Industries</a>
-          <a href="#" onClick={() => setMenuOpen(false)}>Contact</a>
+          <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/about" className="is-active" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </nav>
-        <a href="#quote" className="bp-btn bp-btn--primary bp-mobile-menu__cta" onClick={() => setMenuOpen(false)}>
+        <Link to="#quote" className="bp-btn bp-btn--primary bp-mobile-menu__cta" onClick={() => setMenuOpen(false)}>
           Get a Quote
-        </a>
+        </Link>
       </div>
       <button
         className={`bp-mobile-scrim ${menuOpen ? "is-open" : ""}`}
@@ -249,7 +248,7 @@ export default function About() {
         <div className="bp-page-header__inner">
           <h1 className="bp-anim bp-anim--1">About Us</h1>
           <nav className="bp-breadcrumb bp-anim bp-anim--2" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <IconChevronRight width="14" height="14" />
             <span>About</span>
           </nav>
@@ -267,9 +266,9 @@ export default function About() {
               value and building a sustainable future. Over the years, we have grown into a trusted partner for
               individuals, businesses and government organizations across Nigeria.
             </p>
-            <a href="/#services" className="bp-btn bp-btn--primary bp-btn--icon">
+            <Link to="/#services" className="bp-btn bp-btn--primary bp-btn--icon">
               Learn More About Us <IconArrowRight width="16" height="16" />
-            </a>
+            </Link>
           </div>
           <div className="bp-story__image">
             <img src={STORY_IMAGE} alt="Modern glass office building" />
@@ -357,22 +356,22 @@ export default function About() {
           <div className="bp-footer__col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/#services">Services</a></li>
-              <li><a href="/#projects">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="bp-footer__col">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="/#services">Building Construction</a></li>
-              <li><a href="/#services">Renovation & Remodeling</a></li>
-              <li><a href="/#services">Project Management</a></li>
-              <li><a href="/#services">Civil Engineering</a></li>
-              <li><a href="/#services">Architecture & Design</a></li>
+              <li><Link to="/services/building-construction">Building Construction</Link></li>
+              <li><Link to="/services/renovation-remodeling">Renovation & Remodeling</Link></li>
+              <li><Link to="/services/project-management">Project Management</Link></li>
+              <li><Link to="/services/civil-engineering">Civil Engineering</Link></li>
+              <li><Link to="/services/architecture-design">Architecture & Design</Link></li>
             </ul>
           </div>
 
