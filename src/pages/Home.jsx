@@ -274,7 +274,7 @@ export default function Home() {
             <button className="bp-icon-btn" aria-label="Search">
               <IconSearch width="18" height="18" />
             </button>
-            <Link to="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
+            <Link to="/contact" className="bp-btn bp-btn--primary bp-btn--sm">
               Get a Quote
             </Link>
             <button className="bp-menu-toggle" aria-label="Open menu" onClick={() => setMenuOpen(true)}>
@@ -450,9 +450,9 @@ export default function Home() {
             <h2>Have a Project in Mind?</h2>
             <p>Let's build it together. Get in touch with our team for a free consultation and quote.</p>
           </div>
-          <a href="#quote-form" className="bp-btn bp-btn--primary bp-btn--icon">
+          <Link to="/contact" className="bp-btn bp-btn--primary bp-btn--icon">
             Get a Free Quote <IconArrowRight width="16" height="16" />
-          </a>
+          </Link>
         </div>
       </section>
 

@@ -708,6 +708,9 @@ button {
 .bp-cta {
   position: relative;
   overflow: hidden;
+  padding: 50px;
+  margin: 50px;
+  border-radius: var(--radius-md);
 }
 
 .bp-cta__bg {
@@ -830,7 +833,7 @@ button {
 }
 
 .bp-footer__social a:hover {
-  background: var(--color-secondary);
+  background: var(--color-muted);
   transform: translateY(-2px);
 }
 

@@ -621,7 +621,7 @@ button {
 }
 
 .bp-footer__social a:hover {
-  background: var(--color-secondary);
+  background: var(--color-);
   transform: translateY(-2px);
 }
 

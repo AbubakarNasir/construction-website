@@ -286,7 +286,7 @@ export default function Contact() {
 
             <form className="bp-form" onSubmit={handleSubmit}>
               <div className="bp-form__field">
-                <label htmlFor="name">Full Name *</label>
+                <label htmlFor="name">Full Name <span className="req"> Required</span></label>
                 <input
                   id="name"
                   type="text"
@@ -298,7 +298,7 @@ export default function Contact() {
               </div>
 
               <div className="bp-form__field">
-                <label htmlFor="email">Email Address *</label>
+                <label htmlFor="email">Email Address <span className="req"> Required</span></label>
                 <input
                   id="email"
                   type="email"
@@ -321,7 +321,7 @@ export default function Contact() {
               </div>
 
               <div className="bp-form__field">
-                <label htmlFor="message">Message *</label>
+                <label htmlFor="message">Message <span className="req"> Required</span></label>
                 <textarea
                   id="message"
                   rows={5}

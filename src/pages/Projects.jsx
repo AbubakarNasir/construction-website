@@ -190,7 +190,7 @@ export default function Projects() {
             <button className="bp-icon-btn" aria-label="Search">
               <IconSearch width="18" height="18" />
             </button>
-            <Link to="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
+            <Link to="/contact" className="bp-btn bp-btn--primary bp-btn--sm">
               Get a Quote
             </Link>
             <button className="bp-menu-toggle" aria-label="Open menu" onClick={() => setMenuOpen(true)}>
@@ -287,7 +287,7 @@ export default function Projects() {
             <h2>Interested in Working With Us?</h2>
             <p>Let's bring your vision to life. Get in touch with our team for a free consultation.</p>
           </div>
-          <Link to="#quote-form" className="bp-btn bp-btn--primary bp-btn--icon">
+          <Link to="/contact" className="bp-btn bp-btn--primary bp-btn--icon">
             Get a Quote <IconArrowRight width="16" height="16" />
           </Link>
         </div>

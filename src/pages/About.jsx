@@ -205,7 +205,7 @@ export default function About() {
             <button className="bp-icon-btn" aria-label="Search">
               <IconSearch width="18" height="18" />
             </button>
-            <Link to="#quote" className="bp-btn bp-btn--primary bp-btn--sm">
+            <Link to="/contact" className="bp-btn bp-btn--primary bp-btn--sm">
               Get a Quote
             </Link>
             <button className="bp-menu-toggle" aria-label="Open menu" onClick={() => setMenuOpen(true)}>
